@@ -37,8 +37,8 @@
       "Create a Feishu doc from this summary."
     ],
     "brandColor": "#1F7A8C",
-    "composerIcon": "./assets/lark-cli-icon.svg",
-    "logo": "./assets/lark-cli-logo.svg",
+    "composerIcon": "./assets/feishu-icon.png",
+    "logo": "./assets/feishu-icon.png",
     "screenshots": []
   }
 }

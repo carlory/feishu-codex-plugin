@@ -1,0 +1,52 @@
+name: Sync upstream larksuite cli skills
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync upstream skills
+        run: ./scripts/sync-upstream-skills.sh main
+
+      - name: Validate plugin manifests
+        run: |
+          python3 -m json.tool .agents/plugins/marketplace.json >/dev/null
+          python3 -m json.tool plugins/lark-cli/.codex-plugin/plugin.json >/dev/null
+
+      - name: Read upstream commit
+        id: upstream
+        run: |
+          commit="$(sed -n 's/^Last synced commit: `\(.*\)`$/\1/p' plugins/lark-cli/UPSTREAM.md)"
+          echo "commit=$commit" >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: sync/larksuite-cli-skills
+          delete-branch: true
+          title: "chore: sync larksuite cli skills"
+          commit-message: "chore: sync larksuite cli skills"
+          body: |
+            Sync `plugins/lark-cli/skills/` from `larksuite/cli`.
+
+            Upstream commit: `${{ steps.upstream.outputs.commit }}`
+
+            Local plugin wrapper files are intended to remain separate from the upstream skills mirror.
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number != ''
+        run: gh pr merge "${{ steps.cpr.outputs.pull-request-number }}" --squash --auto
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

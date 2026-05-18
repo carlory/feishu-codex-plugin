@@ -1,0 +1,44 @@
+{
+  "name": "lark-cli",
+  "version": "0.1.0",
+  "description": "Use the official Lark/Feishu CLI from Codex with upstream AI Agent Skills.",
+  "author": {
+    "name": "carlory",
+    "email": "noreply@example.com",
+    "url": "https://github.com/carlory"
+  },
+  "homepage": "https://github.com/larksuite/cli",
+  "repository": "https://github.com/carlory/feishu-codex-plugin",
+  "license": "MIT",
+  "keywords": [
+    "lark",
+    "feishu",
+    "cli",
+    "productivity",
+    "agent"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Lark CLI",
+    "shortDescription": "Operate Lark and Feishu with the official CLI",
+    "longDescription": "Install and use the official larksuite/cli tool from Codex, with upstream AI Agent Skills for Calendar, Messenger, Docs, Drive, Sheets, Base, Mail, Tasks, Meetings, Approval, OKR, and more.",
+    "developerName": "carlory",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/larksuite/cli",
+    "privacyPolicyURL": "https://www.larksuite.com/en_us/privacy",
+    "termsOfServiceURL": "https://www.larksuite.com/en_us/terms",
+    "defaultPrompt": [
+      "Set up lark-cli and check my auth status.",
+      "Show today's Feishu calendar agenda.",
+      "Create a Feishu doc from this summary."
+    ],
+    "brandColor": "#1F7A8C",
+    "composerIcon": "./assets/lark-cli-icon.svg",
+    "logo": "./assets/lark-cli-logo.svg",
+    "screenshots": []
+  }
+}

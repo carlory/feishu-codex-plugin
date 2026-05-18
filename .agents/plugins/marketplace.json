@@ -1,0 +1,20 @@
+{
+  "name": "feishu-codex-plugin",
+  "interface": {
+    "displayName": "Feishu Codex Plugins"
+  },
+  "plugins": [
+    {
+      "name": "lark-cli",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lark-cli"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

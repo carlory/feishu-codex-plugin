@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Lark CLI logo</title>
+  <desc id="desc">Logo for the Lark CLI Codex plugin.</desc>
+  <rect width="640" height="240" rx="32" fill="#F8FAFC"/>
+  <rect x="40" y="48" width="144" height="144" rx="28" fill="#0B1320"/>
+  <rect x="66" y="78" width="92" height="84" rx="14" fill="#101C2D" stroke="#7DD3FC" stroke-width="6"/>
+  <path d="M84 104l22 16-22 16" fill="none" stroke="#34D399" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M116 144h24" fill="none" stroke="#E5E7EB" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="150" cy="90" r="8" fill="#F97316"/>
+  <text x="220" y="114" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Lark CLI</text>
+  <text x="222" y="154" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="22">Codex plugin for Feishu and Lark automation</text>
+</svg>

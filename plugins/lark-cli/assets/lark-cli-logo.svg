@@ -1,12 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
-  <title id="title">Lark CLI logo</title>
-  <desc id="desc">Logo for the Lark CLI Codex plugin.</desc>
-  <rect width="640" height="240" rx="32" fill="#F8FAFC"/>
-  <rect x="40" y="48" width="144" height="144" rx="28" fill="#0B1320"/>
-  <rect x="66" y="78" width="92" height="84" rx="14" fill="#101C2D" stroke="#7DD3FC" stroke-width="6"/>
-  <path d="M84 104l22 16-22 16" fill="none" stroke="#34D399" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M116 144h24" fill="none" stroke="#E5E7EB" stroke-width="9" stroke-linecap="round"/>
-  <circle cx="150" cy="90" r="8" fill="#F97316"/>
-  <text x="220" y="114" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Lark CLI</text>
-  <text x="222" y="154" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="22">Codex plugin for Feishu and Lark automation</text>
+  <title id="title">Feishu Lark CLI logo</title>
+  <desc id="desc">Logo for the Feishu and Lark CLI Codex plugin.</desc>
+  <defs>
+    <linearGradient id="logoWingA" x1="50" y1="55" x2="156" y2="129" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#23E6C0"/>
+      <stop offset="1" stop-color="#2D7DFF"/>
+    </linearGradient>
+    <linearGradient id="logoWingB" x1="157" y1="53" x2="84" y2="158" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8C7CFF"/>
+      <stop offset="1" stop-color="#1459D9"/>
+    </linearGradient>
+    <linearGradient id="logoWingC" x1="48" y1="94" x2="136" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#48D7FF"/>
+      <stop offset="1" stop-color="#6554F2"/>
+    </linearGradient>
+    <linearGradient id="logoBadge" x1="137" y1="137" x2="190" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="240" rx="32" fill="#F8FAFF"/>
+  <rect x="34" y="34" width="172" height="172" rx="38" fill="#FFFFFF"/>
+  <path d="M58 69c44-14 78-9 115 14-31 2-59 12-81 38-11-16-22-32-34-52z" fill="url(#logoWingA)"/>
+  <path d="M94 123c14-44 40-68 84-78 0 42-14 76-45 102-13-8-25-16-39-24z" fill="url(#logoWingB)"/>
+  <path d="M57 98c37 11 66 30 86 61-34 6-66 0-95-20 3-14 6-27 9-41z" fill="url(#logoWingC)"/>
+  <path d="M94 124c18-11 35-13 49-3-12 6-23 15-32 28-6-8-11-16-17-25z" fill="#FFFFFF" opacity=".72"/>
+  <rect x="132" y="132" width="60" height="60" rx="18" fill="url(#logoBadge)" stroke="#FFFFFF" stroke-width="7"/>
+  <path d="M149 156l10 7-10 7" fill="none" stroke="#34D399" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M164 171h12" fill="none" stroke="#E5E7EB" stroke-width="5" stroke-linecap="round"/>
+  <text x="240" y="107" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">Feishu / Lark CLI</text>
+  <text x="242" y="150" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="22">Codex plugin for official larksuite/cli skills</text>
 </svg>
